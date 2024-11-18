@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mediapipe Holistic Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    canvas {
+      border: 1px solid black;
+    }
+    video {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mediapipe Holistic Test</h1>
+  <video id="inputVideo" autoplay></video>
+  <canvas id="outputCanvas" width="1280" height="720"></canvas>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
