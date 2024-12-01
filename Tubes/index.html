@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mediapipe Holistic Test</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-    }
-    canvas {
-      border: 1px solid black;
-    }
-    video {
-      display: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLB Model with MediaPipe Integration</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: #000;
+        }
+        video, canvas {
+            position: absolute;
+            width: 320px;
+            height: 240px;
+            border: 2px solid white;
+        }
+        video {
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+        }
+        canvas#mediapipeOutput {
+            top: 10px;
+            left: 340px;
+            z-index: 10;
+        }
+    </style>
 </head>
 <body>
-  <h1>Mediapipe Holistic Test</h1>
-  <video id="inputVideo" autoplay></video>
-  <canvas id="outputCanvas" width="1280" height="720"></canvas>
-  <script type="module" src="/src/main.js"></script>
+    <!-- Video element for MediaPipe -->
+    <video id="cameraFeed" autoplay playsinline muted></video>
+    <!-- Canvas element for MediaPipe detection output -->
+    <canvas id="mediapipeOutput"></canvas>
+    <!-- Script for Three.js and MediaPipe -->
+    <script type="module" src="/src/main.js"></script>
 </body>
 </html>
