@@ -53,7 +53,7 @@ let leftUpperArmBone;   // Reference to left upper arm bone
 let leftForeArmBone;    // Reference to left forearm bone
 let leftHandBone;       // Reference to left hand bone
 const loader = new GLTFLoader();
-loader.load('src/human3.glb', (gltf) => {
+loader.load('src/human.glb', (gltf) => {
     console.log('Model loaded successfully'); // Log saat model berhasil dimuat
     model = gltf.scene;
     model.traverse((child) => {
@@ -71,7 +71,7 @@ loader.load('src/human3.glb', (gltf) => {
         }
     });
     scene.add(model);
-    model.scale.set(2, 2, 2);
+    model.scale.set(3, 3, 3);
     model.position.set(0, -3, 0);
 }, undefined, (error) => {
     console.error('Error loading model:', error);
@@ -188,10 +188,6 @@ function drawResults(results) {
             // rightForeArmBone.rotation.z = forearmRotation.z;
         }
         
-
-
-
-
 
         function calculateUpperArmRotationLeft(shoulder, elbow) {
             // Vektor arah dari shoulder ke elbow untuk lengan kiri
