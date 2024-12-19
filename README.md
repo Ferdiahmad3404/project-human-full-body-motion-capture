@@ -11,19 +11,19 @@ Ini adalah proyek ReactJS yang dapat dijalankan dengan mengikuti langkah-langkah
    git clone https://github.com/Ferdiahmad3404/project-human-full-body-motion-capture/tree/main
 
 2. **Masuk ke direktori proyek**
-    Setelah repository berhasil di-clone, masuk ke direktori proyek:
+   Setelah repository berhasil di-clone, masuk ke direktori proyek:
    
     ```bash
     cd your-repository-name
 
 4. **Buka proyek di VSCode**
-    Buka direktori proyek di VSCode dengan menjalankan perintah:
+   Buka direktori proyek di VSCode dengan menjalankan perintah:
    
     ```bash
     code .
 
 6. **Install dependencies**
-    Jalankan perintah berikut untuk menginstal semua dependencies yang dibutuhkan:
+   Jalankan perintah berikut untuk menginstal semua dependencies yang dibutuhkan:
    
     ```bash
     npm install
