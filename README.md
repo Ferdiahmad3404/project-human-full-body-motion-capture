@@ -26,8 +26,7 @@ Ini adalah proyek ReactJS yang dapat dijalankan dengan mengikuti langkah-langkah
     npm install
 
 5. **Jalankan aplikasi**
-    Setelah dependencies terinstal, jalankan aplikasi dengan perintah:
+   Aplikasi akan berjalan di http://localhost:5173.
+   Setelah dependencies terinstal, jalankan aplikasi dengan perintah:
     ```bash
     npm run dev
-
-    Aplikasi akan berjalan di http://localhost:5173.
